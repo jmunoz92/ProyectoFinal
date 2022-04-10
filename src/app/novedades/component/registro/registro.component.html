@@ -1,0 +1,22 @@
+
+<div *ngIf="frmFormulario.valid">
+<h3>Datos enviados.</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Correo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>{{frmFormulario.get('nombre').value}}</td>
+        <td>{{frmFormulario.get('paterno').value}} {{frmFormulario.get('materno').value}}</td>
+        <td>{{frmFormulario.get('correo').value}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

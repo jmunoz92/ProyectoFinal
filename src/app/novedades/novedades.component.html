@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body> <div class="container">
     <h2>Deja tus  <strong>Datos</strong></h2>
     <h3>Te enviaremos las novedades</h3>
 <hr>
@@ -57,11 +57,14 @@
 
     <div class="alert alert-success" role="alert" *ngIf="validaIndice=='SI'">
         Perfecto!!!, nos pondremos en contacto. <i>(por el momento no esta la integración con el registro.)</i>
+        <app-registro [frmFormulario]="forma"></app-registro>
       </div>
 
       <div class="alert alert-danger" role="alert" *ngIf="validaIndice=='NO'">
         Lo sentimos, no fue posible registrar. <br /> Todos los campos son obligatorios, y el correo debe ser válido.
       </div>
+
+</div>
 
 </div>
 </body>
